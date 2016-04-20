@@ -1,0 +1,16 @@
+{
+  "name": "glossary-mode",
+  "main": "./lib/glossary-mode",
+  "version": "0.1.0",
+  "description": "Glossary mode",
+  "keywords": [
+    "glossary"
+  ],
+  "repository": "https://github.com/atom/glossary-index",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

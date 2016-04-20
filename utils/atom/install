@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+PACKAGE_NAME="glossary-mode"
+PACKAGE_FOLDER="$(cd `dirname $0` && pwd)/$PACKAGE_NAME"
+ATOM_PACKAGE_FOLER="~/.atom/packages/$PACKAGE_NAME"
+
+eval "test -L $ATOM_PACKAGE_FOLER" && {
+    echo "Package already installed $ATOM_PACKAGE_FOLER"
+} || {
+    rm -f ${ATOM_PACKAGE_FOLER}
+    eval "ln -s ${PACKAGE_FOLDER} ${ATOM_PACKAGE_FOLER}" && {
+      echo "Package symbolic link created $ATOM_PACKAGE_FOLER --> $PACKAGE_FOLDER"
+    }
+}

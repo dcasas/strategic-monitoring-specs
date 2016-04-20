@@ -1,0 +1,57 @@
+'name': 'Glossary'
+'scopeName': 'source.glossary'
+'fileTypes': [
+  'md'
+]
+'patterns': [
+  {
+    'begin': '^\\s*<!--\\s*GLOSSARY:Index\\s*'
+    'end' : '^\\s*<!--\\s*/GLOSSARY:Index\\s*-->\\s*$'
+    'name': 'glossary.index'
+    'patterns': [
+      {
+        'include': '$self'
+      },
+      {
+        'include': 'source.gfm'
+      }
+    ]
+  }
+  {
+    'match': '([^=\\s]+)(?:\\s*=\\s*[\'"])([^\'"]+)[\'"]\\s*'
+    'name': 'glossary.index.option'
+    'captures':
+      '1':
+        'name': 'glossary.index.option.name'
+      '2':
+        'name': 'glossary.index.option.value'
+  },
+  {
+    'begin': '^#{1}\\s+(?i:Acronyms)\\s*$'
+    'end' : '^#{1}\\s+(?<!Acronyms)'
+    'name': 'glossary.acronyms'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  },
+  {
+    'begin': '^#{3}\\s+(.*)\\s*$'
+    'end': '^#{1,2}\\s+'
+    'name': 'glossary.term'
+    'captures':
+      '1':
+        'name': 'glossary.term.name'
+    'patterns': [
+      {
+        'match': '^.*$'
+        'name': 'glossary.text'
+      }
+    ]
+  },
+  {
+    'match': '^.*$'
+    'name': 'glossary.text'
+  }
+]

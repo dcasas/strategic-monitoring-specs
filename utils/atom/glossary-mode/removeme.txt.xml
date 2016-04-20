@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><HTML>
+  <tag0:HEAD xmlns:tag0="http://www.w3.org/1999/xhtml"/>
+  <BODY>
+    <HR/>
+    <DIV>Release version: <SPAN class="bluebold">FSP-20160226-152925</SPAN>
+    </DIV>
+    <DIV>Application namespace: <SPAN class="bluebold">GRC-FSP-QA1</SPAN>
+    </DIV>
+    <DIV>Environment: <SPAN class="bluebold">QA1</SPAN>
+    </DIV>
+    <DIV>Limit: <SPAN class="bluebold"/>
+    </DIV>
+    <HR/>
+    <TABLE style="width:100%;font-size:9px;">
+      <TBODY>
+        <TR>
+          <TH>deployable</TH>
+          <TH>configuaration</TH>
+        </TR>
+        <TR>
+          <TD>logging-service-ui-1.0.7.war</TD>
+          <TD>logging-service-ui-1.0.7-config.tar</TD>
+        </TR>
+        <TR>
+          <TD>session-service-1.1.0.war</TD>
+          <TD>session-service-1.1.0-config.tar</TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <HR/>
+    <BUTTON id="shell" value="Go" onclick="release('FSP-20160226-152925','GRC-FSP-QA1','QA1','')" type="button">Deploy</BUTTON>       forceDeployment: <INPUT id="forceDeployment" type="checkbox"/>       Dry Run: <INPUT id="dryRun" type="checkbox"/>             </BODY>
+</HTML>
