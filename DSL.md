@@ -13,7 +13,7 @@
 <!-- /TOC -->
 
 # Introduction
-This is an attempt to define a [`DSL`] for [`WCO`].
+This is an attempt to define a [`DSL`] for [`SM`].
 
 _"A domain model captures the most important types of objects in the context of the business. The domain model represents the ‘**things**’ that **exist** or **events** that transpire in the **business** environment."_ – I. Jacobsen
 
@@ -240,7 +240,7 @@ Use one of these patterns when writing `Then` step definitions:
    Then the (CommandOrQuery) "coq" result's {attributeName} is less than or equals to "value"
 ```
 
-[`WCO`]:     GLOSSARY.md#wco     "World-Check One"
+[`SM`]:      GLOSSARY.md#sm     "Strategic Monitoring"
 [`DSL`]:     GLOSSARY.md#dsl     "DSL"
 [`Actor`]:   GLOSSARY.md#actor   "Actor"
 [`Query`]:   GLOSSARY.md#query   "Feature"
