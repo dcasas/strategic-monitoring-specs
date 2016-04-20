@@ -5,7 +5,7 @@
 - [Conventions And Organisation](#conventions-and-organisation)
 	- [Glossary files](#glossary-files)
 	- [Feature Files](#feature-files)
-		- [WCO flavored Gherkin Notation](#wco-flavored-gherkin-notation)
+		- [SM flavored Gherkin Notation](#sm-flavored-gherkin-notation)
 			- [`Given` Step Definition Conventions](#given-step-definition-conventions)
 			- [`When` Step Definition Conventions](#when-step-definition-conventions)
 			- [`Then` Step Definition Conventions](#then-step-definition-conventions)
@@ -21,9 +21,9 @@ _"At its worst business logic can be very complex. Rules and logic describe many
 
 We have seen (see problems described [here](https://thehub.thomsonreuters.com/events/81125)) that the lack of a proper understanding of the domain model hinders our ability to define useful specifications that are readily usable for assuring the quality of a software system (regardless whether those specifications are used for automated or manual testing).
 
-The main goal of this project is to provide a conceptual framework of the _'things'_ in the [`WCO`] space, based on _glossary of terms_ or _domain dictionaries_ among others, for helping you focus on semantics when defining and communicating specifications for new, or existing, functionalities so that such specifications can be used directly to asses the quality of [`WCO`] system.
+The main goal of this project is to provide a conceptual framework of the _'things'_ in the [`SM`] space, based on _glossary of terms_ or _domain dictionaries_ among others, for helping you focus on semantics when defining and communicating specifications for new, or existing, functionalities so that such specifications can be used directly to asses the quality of [`SM`] system.
 
-This repository is the _Single Source of Truth_ for [`WCO`] _Domain Model_ and specifications, and, as a consequence, provides a static view of [`WCO`]'s requirements (meaning it conveys time invariant business rules, which is the foundation for use case/workflow modelling).
+This repository is the _Single Source of Truth_ for [`SM`] _Domain Model_ and specifications, and, as a consequence, provides a static view of [`SM`]'s requirements (meaning it conveys time invariant business rules, which is the foundation for use case/workflow modelling).
 
 # Why I should care about this
 I will try to convince you that both _specifications_ and _working software_ are actually the same thing, and that it is worth to spend a “reasonable” amount of time and effort on coming up with __good enough specifications__ in order to produce __working software__.
@@ -54,7 +54,7 @@ The information in this repository is organized into folders, which represent [`
 ```
 some-domain
    |- README.md                          # High level description of this domain
-   |- GLOSSARY.md                        # Global Acronyms & Terms definitions for WCO domain
+   |- GLOSSARY.md                        # Global Acronyms & Terms definitions for this domain
    |- DSL.md                             # DSL documentation
    |- templates                          # Template files for new domains
    |   |- README.md
@@ -106,7 +106,7 @@ A [`Feature`] is a distinctive aspect of a `Story`. A `Story` can and should be 
 
 For each [`Feature`] in a _story_ there will be a feature file, as described in the [Conventions](#conventions) section. The feature file contains the feature's [Behavioral Specifications] using [Gherkin Notation].
 
-### WCO flavored Gherkin Notation
+### SM flavored Gherkin Notation
 The [Gherkin Notation], on its own, does not help us to reduce the gap, impedance mismatch or translation cost between the business requirements and the tests that assure the quality of a particular technical solution due, in part, to the problems identified [here](https://thehub.thomsonreuters.com/events/81125). Additionally we need to:
 * make explicit references to the domain concepts used in each step definition, and those domain concepts must be univocally identified in the domain dictionary/glossary.
 * make the steps definitions as simple and short as possible. They should do _one and only one thing_, they should reference one and only one domain concept.
