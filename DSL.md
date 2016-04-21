@@ -107,7 +107,7 @@ A [`Feature`] is a distinctive aspect of a `Story`. A `Story` can and should be 
 For each [`Feature`] in a _story_ there will be a feature file, as described in the [Conventions](#conventions) section. The feature file contains the feature's [Behavioral Specifications] using [Gherkin Notation].
 
 ### SM flavored Gherkin Notation
-The [Gherkin Notation], on its own, does not help us to reduce the gap, impedance mismatch or translation cost between the business requirements and the tests that assure the quality of a particular technical solution due. Additionally we need to define a [`DSL`], a common language that both the business and technical people understand. Basically we would need to:
+The [Gherkin Notation], on its own, does not help us to reduce the gap, impedance mismatch or translation cost between the business requirements and the tests that assure the quality of a particular technical solution. Additionally we need to define a [`DSL`], a common language that both the business and technical people understand. Basically we would need to:
 * make explicit references to the domain concepts used in each step definition, and those domain concepts must be univocally identified in the domain dictionary/glossary.
 * make the steps definitions as simple and short as possible. They should do _one and only one thing_, they should reference one and only one domain concept.
 * make the steps definition standard by defining well known patterns for the _Given_, _When_ and _Then_ steps.
