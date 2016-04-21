@@ -19,7 +19,7 @@ _"A domain model captures the most important types of objects in the context of 
 
 _"At its worst business logic can be very complex. Rules and logic describe many different cases and slants of behavior, and it's this complexity that **objects** were designed to work with. A Domain Model creates a web of **interconnected** objects, where each object represents some **meaningful** individual, whether as large as a corporation or as small as a single line on an order form"_ – Martin Fowler
 
-We have seen (see problems described [here](https://thehub.thomsonreuters.com/events/81125)) that the lack of a proper understanding of the domain model hinders our ability to define useful specifications that are readily usable for assuring the quality of a software system (regardless whether those specifications are used for automated or manual testing).
+The lack of a proper understanding of the domain hinders our ability to define useful specifications that are readily usable for assuring the quality of a software system (regardless whether those specifications are used for automated or manual testing).
 
 The main goal of this project is to provide a conceptual framework of the _'things'_ in the [`SM`] space, based on _glossary of terms_ or _domain dictionaries_ among others, for helping you focus on semantics when defining and communicating specifications for new, or existing, functionalities so that such specifications can be used directly to asses the quality of [`SM`] system.
 
@@ -28,7 +28,7 @@ This repository is the _Single Source of Truth_ for [`SM`] _Domain Model_ and sp
 # Why I should care about this
 I will try to convince you that both _specifications_ and _working software_ are actually the same thing, and that it is worth to spend a “reasonable” amount of time and effort on coming up with __good enough specifications__ in order to produce __working software__.
 
-I know what you are thinking... _but what it means “good enough specification"?_
+What it means “good enough specification"?
 
 __A specification for a given [`Feature`] is good enough when you can directly use it to unambiguously verify the quality of a given implementation for such [`Feature`].__
 
