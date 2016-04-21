@@ -26,7 +26,7 @@ The main goal of this project is to provide a conceptual framework of the _'thin
 This repository is the _Single Source of Truth_ for [`SM`] _Domain Model_ and specifications, and, as a consequence, provides a static view of [`SM`]'s requirements (meaning it conveys time invariant business rules, which is the foundation for use case/workflow modelling).
 
 # Why I should care about this
-I will try to convince you that both _specifications_ and _working software_ are actually the same thing, and that it is worth to spend a “reasonable” amount of time and effort on coming up with __good enough specifications__ in order to produce __working software__.
+I will try to convince you that both _specifications_ and _working software_ are actually the same thing, and that it is worth spending a “reasonable” amount of time and effort on coming up with __good enough specifications__ in order to produce __working software__.
 
 What it means “good enough specification"?
 
