@@ -4,7 +4,16 @@ This is the entry point to anyone interested on learning about the [`SM`] domain
 
 `TBC`
 
-<div style="width: 640px; height: 480px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://www.lucidchart.com/documents/embeddedchart/cde32bc7-d9d9-4503-aef2-82b1ecbbfc25" id="fmFcxa0I7jjw"></iframe></div>
+<div style="width: 640px; height: 480px; margin: 10px; position: relative;">
+    <iframe allowfullscreen="allowfullscreen" 
+            frameborder="0" 
+            style="width:640px; height:480px" 
+            src="https://www.lucidchart.com/documents/embeddedchart/cde32bc7-d9d9-4503-aef2-82b1ecbbfc25" 
+            id="fmFcxa0I7jjw">
+            it should shown a diagram
+    </iframe>
+    &nbsp;
+</div>
 
 ![SM Domain](http://g.gravizo.com/g?
   digraph G {
