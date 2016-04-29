@@ -43,7 +43,7 @@ Feature: CreateIssue Command
           | title  | description | category | classification | severity | level |
           | ValTit |  ValidDesc  | ValidCat |   ValidClass   | ValidSev |<LEVEL>|
      Then the (CreateIssue) "command" outcome is "SUCCESS"
-      And the (CreateIssue) "command" result's {id} matches "^[A-Z]{3}-\d{1,10}$"
+      And the (CreateIssue) "command" result's {identity.uuid} matches "^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$"
     Examples:
         | PERSONA | LEVEL             |
         | Chirag  | Client Division   |
